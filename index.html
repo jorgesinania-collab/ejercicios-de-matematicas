@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problemas Matemáticos</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <header>
+        <h1>Problemas Matemáticos</h1>
+        <p>Cuatro ejercicios interactivos de matemáticas</p>
+    </header>
+
+    <main>
+
+        <section class="ejercicio">
+            <h2>1. El reparto de los camellos</h2>
+
+            <p>Introduce la cantidad de camellos originales. Se agregará uno temporalmente para realizar el reparto.</p>
+
+            <input type="number" id="totalCamellos" placeholder="Cantidad de camellos" min="1" step="1">
+
+            <button onclick="camellos()">Resolver</button>
+
+            <p id="r1"></p>
+        </section>
+
+        <section class="ejercicio">
+            <h2>2. La venta de los melones</h2>
+
+            <p>Introduce las cantidades de melones y las condiciones de venta de cada hermano. Después, compara la venta por separado con la venta conjunta.</p>
+
+            <label for="melones1">Melones del primer hermano:</label>
+            <input type="number" id="melones1" placeholder="Ejemplo: 30" min="0" step="1">
+
+            <label for="precio1">Melones por moneda del primer hermano:</label>
+            <input type="number" id="precio1" placeholder="Ejemplo: 3" min="1" step="1">
+
+            <label for="melones2">Melones del segundo hermano:</label>
+            <input type="number" id="melones2" placeholder="Ejemplo: 30" min="0" step="1">
+
+            <label for="precio2">Melones por moneda del segundo hermano:</label>
+            <input type="number" id="precio2" placeholder="Ejemplo: 2" min="1" step="1">
+
+            <label for="melonesJuntos">Melones por grupo en la venta conjunta:</label>
+            <input type="number" id="melonesJuntos" placeholder="Ejemplo: 5" min="1" step="1">
+
+            <label for="monedasJuntas">Monedas por grupo:</label>
+            <input type="number" id="monedasJuntas" placeholder="Ejemplo: 2" min="0.01" step="any">
+
+            <button onclick="melones()">Calcular ventas</button>
+
+            <p id="r2"></p>
+        </section>
+
+        <section class="ejercicio">
+            <h2>3. Ecuación cuadrática</h2>
+
+            <p>Resuelve la ecuación ax² + bx + c = 0 introduciendo sus coeficientes.</p>
+
+            <label for="a">Valor de a:</label>
+            <input type="number" id="a" placeholder="Ejemplo: 1" step="any">
+
+            <label for="b">Valor de b:</label>
+            <input type="number" id="b" placeholder="Ejemplo: -5" step="any">
+
+            <label for="c">Valor de c:</label>
+            <input type="number" id="c" placeholder="Ejemplo: 6" step="any">
+
+            <button onclick="ecuacion()">Calcular solución</button>
+
+            <p id="r3"></p>
+        </section>
+
+        <section class="ejercicio">
+            <h2>4. Aproximación de pi</h2>
+
+            <p>Introduce la cantidad de términos para calcular una aproximación de pi mediante una suma matemática.</p>
+
+            <label for="n">Cantidad de términos:</label>
+            <input type="number" id="n" placeholder="Ejemplo: 1000" min="1" max="1000000" step="1">
+
+            <button onclick="pi()">Calcular pi</button>
+
+            <p id="r4"></p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Proyecto de Programación Web I</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
